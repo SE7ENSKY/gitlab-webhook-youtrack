@@ -1,0 +1,38 @@
+{
+	"name": "gitlab-webhook-youtrack",
+	"version": "1.0.0",
+	"author": "Se7enSky studio <info@se7ensky.com>",
+	"keywords": [
+		"gitlab",
+		"youtrack",
+		"webhook",
+		"hook",
+		"integration"
+	],
+	"engines": {
+		"node": "*"
+	},
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/Se7enSky/gitlab-webhook-youtrack.git"
+	},
+	"licenses": [{
+		"type": "mit"
+	}],
+	"readmeFilename": "README.md",
+	"dependencies": {
+		"coffee-script": "*",
+		"express": "~3.0.0",
+		"request": "*",
+		"async": "*",
+		"lodash": "*"
+	},
+	"devDependencies": {
+		"mocha": "*",
+		"should": "*"
+	},
+	"scripts": {
+		"start": "./node_modules/.bin/coffee app.coffee",
+		"test": "./node_modules/.bin/mocha -R spec -r coffee-script -r should test/*"
+	}
+}
